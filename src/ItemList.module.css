@@ -1,0 +1,13 @@
+.listContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 1.25em;
+  gap: 1em;
+  align-items: center;
+}
+
+.sn,
+.items {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

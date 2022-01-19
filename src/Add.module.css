@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25em;
+  margin: 1em;
+}
+
+.input {
+  font-size: 1.125rem;
+}

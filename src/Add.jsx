@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button, Form, Icon } from "semantic-ui-react";
 import styles from "./Add.module.css";
 
 function Add({ setTodoItems }) {
@@ -11,12 +12,18 @@ function Add({ setTodoItems }) {
   };
   return (
     <div className={styles.container}>
-      <form autoComplete="off" onSubmit={handleSubmit} className={styles.form}>
-        <input className={styles.input} type="text" value={item} onChange={(e) => setItem(e.target.value)} />
-        <button className={styles.button} type="submit">
-          Submit
-        </button>
-      </form>
+      <Form onSubmit={handleSubmit} className={styles.form}>
+        <Form.Input
+          type="text"
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
+          width={15}
+          className={styles.input}
+        />
+        <Button icon type="submit" size="large">
+          <Icon name="add" />
+        </Button>
+      </Form>
     </div>
   );
 }

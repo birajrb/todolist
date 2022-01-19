@@ -1,11 +1,14 @@
 .containerWrapper {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .container {
   width: 30%;
-  border: 1px solid red;
+  border: 1px solid #ccc;
+  min-height: 50vh;
+  border-radius: 6px;
 }
