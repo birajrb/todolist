@@ -1,0 +1,11 @@
+.containerWrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 30%;
+  border: 1px solid red;
+}
